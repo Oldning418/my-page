@@ -4,9 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Meta Muse 邀请码 FWS3K3 — 双方各得 10 亿 token</title>
-<meta name="description" content="Meta Muse 邀请码 FWS3K3，注册后 48 小时内在 Settings 兑换，你和邀请人各得 10 亿 Muse tokens。">
-<meta property="og:title" content="Meta Muse 邀请码 FWS3K3">
-<meta property="og:description" content="注册 muse.ai 后 48 小时内在 Settings → General → Usage → Redeem invite code 填入 FWS3K3，双方各得 10 亿 token。">
+<meta name="description" content="Meta Muse invite code FWS3K3 — redeem within 48h in Settings → General → Usage → Redeem invite code. Both sides get 1B tokens. 中文说明见页面。">
+<meta property="og:title" content="Meta Muse 邀请码 FWS3K3 — 1B tokens each">
+<meta property="og:description" content="Register at muse.ai, then Settings → General → Usage → Redeem invite code within 48h. Both sides get 1,000,000,000 tokens.">
+<meta property="og:type" content="website">
 <style>
   :root{
     --bg:#0b1020; --card:#141a2e; --line:#243052; --fg:#e8edff; --dim:#8d9bc4;
@@ -21,7 +22,7 @@
   }
   .card{
     width:100%;max-width:520px;background:var(--card);border:1px solid var(--line);
-    border-radius:20px;padding:34px 30px 28px;box-shadow:0 24px 60px rgba(0,0,0,.45);
+    border-radius:20px;padding:34px 30px 28px;box-shadow:0 24px 60px rgba(0,0,0,.45);position:relative;
   }
   .logo{font-size:30px;font-weight:800;letter-spacing:-.5px;background:linear-gradient(90deg,var(--blue2),#9db6ff);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:6px}
   h1{font-size:20px;margin:14px 0 6px;font-weight:650}
@@ -40,7 +41,6 @@
   ol li{margin:7px 0}
   ol b{color:var(--fg);font-weight:600}
   .foot{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);color:#69779c;font-size:12.5px}
-  .tag{display:inline-block;background:#1b2b4a;padding:2px 8px;border-radius:6px}
   .cta{
     display:block;text-align:center;margin:20px 0 4px;padding:14px 16px;border-radius:12px;
     background:linear-gradient(90deg,var(--blue),var(--blue2));color:#fff;font-weight:700;
@@ -49,49 +49,70 @@
   .cta:hover{filter:brightness(1.12)}
   a{color:#7fa4ff;text-decoration:none}
   a:hover{text-decoration:underline}
+  .lang{position:absolute;top:14px;right:14px;display:flex;gap:6px}
+  .lang button{background:#1b2b4a;color:var(--dim);padding:5px 10px;font-size:12px;border-radius:8px}
+  .lang button.on{background:var(--blue);color:#fff}
 </style>
 </head>
 <body>
 <div class="card">
+  <div class="lang">
+    <button id="lang-zh" class="on">中</button>
+    <button id="lang-en">EN</button>
+  </div>
+
   <div class="logo">Muse</div>
-  <h1>邀请你一起白拿 10 亿 token</h1>
-  <div class="sub">Meta 的个人 AI agent · muse.ai · 你和我各得 <b style="color:#7fa4ff">1,000,000,000</b> tokens</div>
+  <h1 data-zh="邀请你一起白拿 10 亿 token" data-en="Get 1 billion free tokens with me">邀请你一起白拿 10 亿 token</h1>
+  <div class="sub" data-zh="Meta 的个人 AI agent · muse.ai · 你和我各得 1,000,000,000 tokens" data-en="Meta's personal AI agent · muse.ai · we each get 1,000,000,000 tokens">Meta 的个人 AI agent · muse.ai · 你和我各得 <b style="color:#7fa4ff">1,000,000,000</b> tokens</div>
 
   <div class="code">
     <b id="code">FWS3K3</b>
-    <button id="copy">复制邀请码</button>
+    <button id="copy" data-zh="复制邀请码" data-en="Copy code">复制邀请码</button>
   </div>
 
-  <ol>
-    <li>打开 <a href="https://muse.ai/" target="_blank" rel="noopener">muse.ai</a>，注册账号（邮箱或手机号）</li>
-    <li><b>48 小时内</b>进入 <b>Settings → General → Usage</b></li>
-    <li>点 <b>Redeem invite code</b>，填入 <b>FWS3K3</b></li>
-    <li>到账 10 亿 tokens，永不过期</li>
+  <ol id="steps">
+    <li data-zh="打开 <a href='https://muse.ai/' target='_blank' rel='noopener'>muse.ai</a>，注册账号（邮箱或手机号）" data-en="Open <a href='https://muse.ai/' target='_blank' rel='noopener'>muse.ai</a> and sign up (email or phone)">打开 <a href="https://muse.ai/" target="_blank" rel="noopener">muse.ai</a>，注册账号（邮箱或手机号）</li>
+    <li data-zh="<b>48 小时内</b>进入 <b>Settings → General → Usage</b>" data-en="Within <b>48 hours</b>, open <b>Settings → General → Usage</b>"><b>48 小时内</b>进入 <b>Settings → General → Usage</b></li>
+    <li data-zh="点 <b>Redeem invite code</b>，填入 <b>FWS3K3</b>" data-en="Click <b>Redeem invite code</b> and enter <b>FWS3K3</b>">点 <b>Redeem invite code</b>，填入 <b>FWS3K3</b></li>
+    <li data-zh="到账 10 亿 tokens，永不过期" data-en="1B tokens land in your account — never expires">到账 10 亿 tokens，永不过期</li>
   </ol>
 
-  <a class="cta" href="https://muse.ai/" target="_blank" rel="noopener">打开 muse.ai 开始注册 →</a>
+  <a class="cta" href="https://muse.ai/" target="_blank" rel="noopener" data-zh="打开 muse.ai 开始注册 →" data-en="Open muse.ai and start →">打开 muse.ai 开始注册 →</a>
 
-  <div class="foot">
-    邀请码有时效与名额限制，若提示已用尽，说明这批已被兑换完。<br>
-    注册需要非中国大陆出口 IP（AWS / 海外机房 IP 成功率最高）。
-  </div>
+  <div class="foot" data-zh="邀请码有时效与名额限制，若提示已用尽，说明这批已被兑换完。<br>注册需要非中国大陆出口 IP（AWS / 海外机房 IP 成功率最高）。" data-en="Codes are time- and slot-limited — if it says used up, this batch is gone.<br>Signup needs a non-mainland-China exit IP (AWS / overseas datacenter IPs work best).">邀请码有时效与名额限制，若提示已用尽，说明这批已被兑换完。<br>注册需要非中国大陆出口 IP（AWS / 海外机房 IP 成功率最高）。</div>
 </div>
 
 <script>
   const btn = document.getElementById('copy');
   btn.onclick = async () => {
     const code = document.getElementById('code').textContent.trim();
-    try {
-      await navigator.clipboard.writeText(code);
-    } catch {
+    try { await navigator.clipboard.writeText(code); }
+    catch {
       const ta = document.createElement('textarea');
       ta.value = code; document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); ta.remove();
     }
-    const old = btn.textContent;
-    btn.textContent = '已复制 ✓';
-    setTimeout(() => btn.textContent = old, 1600);
+    const en = document.documentElement.lang === 'en';
+    btn.textContent = en ? 'Copied ✓' : '已复制 ✓';
+    setTimeout(() => btn.textContent = btn.dataset[en ? 'en' : 'zh'], 1600);
   };
+
+  function setLang(lang) {
+    document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+    document.querySelectorAll('[data-zh]').forEach(el => {
+      el.innerHTML = el.dataset[lang] || el.dataset.zh;
+    });
+    document.getElementById('lang-zh').classList.toggle('on', lang !== 'en');
+    document.getElementById('lang-en').classList.toggle('on', lang === 'en');
+    try { localStorage.setItem('muse-invite-lang', lang); } catch {}
+  }
+  document.getElementById('lang-zh').onclick = () => setLang('zh');
+  document.getElementById('lang-en').onclick = () => setLang('en');
+
+  let saved = 'zh';
+  try { saved = localStorage.getItem('muse-invite-lang') || 'zh'; } catch {}
+  if (navigator.language && !navigator.language.startsWith('zh')) saved = 'en';
+  setLang(saved);
 </script>
 </body>
 </html>
