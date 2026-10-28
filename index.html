@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Meta Muse 邀请码 FWS3K3 — 双方各得 10 亿 token</title>
+<meta name="description" content="Meta Muse 邀请码 FWS3K3，注册后 48 小时内在 Settings 兑换，你和邀请人各得 10 亿 Muse tokens。">
+<meta property="og:title" content="Meta Muse 邀请码 FWS3K3">
+<meta property="og:description" content="注册 muse.ai 后 48 小时内在 Settings → General → Usage → Redeem invite code 填入 FWS3K3，双方各得 10 亿 token。">
+<style>
+  :root{
+    --bg:#0b1020; --card:#141a2e; --line:#243052; --fg:#e8edff; --dim:#8d9bc4;
+    --blue:#2f6bff; --blue2:#5b8cff;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+    background:radial-gradient(1200px 600px at 50% -10%,#1b2a55 0%,var(--bg) 60%);
+    color:var(--fg);font:16px/1.65 -apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    padding:24px;
+  }
+  .card{
+    width:100%;max-width:520px;background:var(--card);border:1px solid var(--line);
+    border-radius:20px;padding:34px 30px 28px;box-shadow:0 24px 60px rgba(0,0,0,.45);
+  }
+  .logo{font-size:30px;font-weight:800;letter-spacing:-.5px;background:linear-gradient(90deg,var(--blue2),#9db6ff);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:6px}
+  h1{font-size:20px;margin:14px 0 6px;font-weight:650}
+  .sub{color:var(--dim);font-size:14px;margin-bottom:24px}
+  .code{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    background:#0d1428;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:22px;
+  }
+  .code b{font:700 28px/1 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:6px;color:#fff}
+  button{
+    background:var(--blue);color:#fff;border:0;border-radius:10px;padding:11px 16px;
+    font-size:14px;font-weight:600;cursor:pointer;transition:.15s;white-space:nowrap;
+  }
+  button:hover{background:var(--blue2)}
+  ol{margin:0;padding-left:20px;color:var(--dim);font-size:14.5px}
+  ol li{margin:7px 0}
+  ol b{color:var(--fg);font-weight:600}
+  .foot{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);color:#69779c;font-size:12.5px}
+  .tag{display:inline-block;background:#1b2b4a;padding:2px 8px;border-radius:6px}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">Muse</div>
+  <h1>邀请你一起白拿 10 亿 token</h1>
+  <div class="sub">Meta 的个人 AI agent · muse.ai · 你和我各得 <b style="color:#7fa4ff">1,000,000,000</b> tokens</div>
+
+  <div class="code">
+    <b id="code">FWS3K3</b>
+    <button id="copy">复制邀请码</button>
+  </div>
+
+  <ol>
+    <li>打开 <b>muse.ai</b>，注册账号（邮箱或手机号）</li>
+    <li><b>48 小时内</b>进入 <b>Settings → General → Usage</b></li>
+    <li>点 <b>Redeem invite code</b>，填入 <b>FWS3K3</b></li>
+    <li>到账 10 亿 tokens，永不过期</li>
+  </ol>
+
+  <div class="foot">
+    邀请码有时效与名额限制，若提示已用尽，说明这批已被兑换完。<br>
+    注册需要非中国大陆出口 IP（AWS / 海外机房 IP 成功率最高）。
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById('copy');
+  btn.onclick = async () => {
+    const code = document.getElementById('code').textContent.trim();
+    try {
+      await navigator.clipboard.writeText(code);
+    } catch {
+      const ta = document.createElement('textarea');
+      ta.value = code; document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); ta.remove();
+    }
+    const old = btn.textContent;
+    btn.textContent = '已复制 ✓';
+    setTimeout(() => btn.textContent = old, 1600);
+  };
+</script>
+</body>
+</html>
